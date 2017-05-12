@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/mtb_isim_beh.exe -prj C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/mtb_beh.prj work.mtb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/aliHalfAdder.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/aliFullAdder.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/aliDFF.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/ali4BFA.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/reg_q.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/reg_a.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/counter.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/controller.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/ali16BFA.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/multiply.vhd" into library work
+Parsing VHDL file "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/mtb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity aliDFF [alidff_default]
+Compiling architecture behavioral of entity reg_a [reg_a_default]
+Compiling architecture behavioral of entity aliHalfAdder [alihalfadder_default]
+Compiling architecture behavioral of entity aliFullAdder [alifulladder_default]
+Compiling architecture behavioral of entity ali4BFA [ali4bfa_default]
+Compiling architecture behavioral of entity ali16BFA [ali16bfa_default]
+Compiling architecture behavioral of entity reg_q [reg_q_default]
+Compiling architecture behavioral of entity counter [counter_default]
+Compiling architecture behavioral of entity controller [controller_default]
+Compiling architecture behavioral of entity multiply [multiply_default]
+Compiling architecture behavior of entity mtb
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Built simulation executable C:/Users/Ali Yazdi/Desktop/Ali Yazdi/mul/mtb_isim_beh.exe
+Fuse Memory Usage: 36120 KB
+Fuse CPU Usage: 811 ms

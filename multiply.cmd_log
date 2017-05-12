@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiply.ngc multiply_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiply.ngc multiply_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiply.ngc multiply_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiply.ngc multiply_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "multiply.ngc" multiply.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o multiply_map.ncd multiply.ngd multiply.pcf 
+par -w -intstyle ise -ol high -mt off multiply_map.ncd multiply.ncd multiply.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "multiply.ngc" multiply.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o multiply_map.ncd multiply.ngd multiply.pcf 
+par -w -intstyle ise -ol high -mt off multiply_map.ncd multiply.ncd multiply.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiply.twx multiply.ncd -o multiply.twr multiply.pcf 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiply.ngc multiply_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "multiply.ngc" multiply.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o multiply_map.ncd multiply.ngd multiply.pcf 
+par -w -intstyle ise -ol high -mt off multiply_map.ncd multiply.ncd multiply.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiply.twx multiply.ncd -o multiply.twr multiply.pcf 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "multiply.ngc" multiply.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o multiply_map.ncd multiply.ngd multiply.pcf 
+par -w -intstyle ise -ol high -mt off multiply_map.ncd multiply.ncd multiply.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiply.twx multiply.ncd -o multiply.twr multiply.pcf 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+xst -intstyle ise -ifn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.xst" -ofn "C:/Users/Ali Yazdi/Desktop/Ali Yazdi/m/multiply.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "multiply.ngc" multiply.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o multiply_map.ncd multiply.ngd multiply.pcf 
+par -w -intstyle ise -ol high -mt off multiply_map.ncd multiply.ncd multiply.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiply.twx multiply.ncd -o multiply.twr multiply.pcf 

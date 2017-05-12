@@ -1,0 +1,575 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: multiply.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiply.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiply"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : multiply
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliHalfAdder.vhd" into library work
+Parsing entity <aliHalfAdder>.
+Parsing architecture <Behavioral> of entity <alihalfadder>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliFullAdder.vhd" into library work
+Parsing entity <aliFullAdder>.
+Parsing architecture <Behavioral> of entity <alifulladder>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliDFF.vhd" into library work
+Parsing entity <aliDFF>.
+Parsing architecture <Behavioral> of entity <alidff>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\ali4BFA.vhd" into library work
+Parsing entity <ali4BFA>.
+Parsing architecture <Behavioral> of entity <ali4bfa>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\reg_q.vhd" into library work
+Parsing entity <reg_q>.
+Parsing architecture <Behavioral> of entity <reg_q>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\reg_a.vhd" into library work
+Parsing entity <reg_a>.
+Parsing architecture <Behavioral> of entity <reg_a>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\controller.vhd" into library work
+Parsing entity <controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\ali16BFA.vhd" into library work
+Parsing entity <ali16BFA>.
+Parsing architecture <Behavioral> of entity <ali16bfa>.
+Parsing VHDL file "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\multiply.vhd" into library work
+Parsing entity <multiply>.
+Parsing architecture <Behavioral> of entity <multiply>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <multiply> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_a> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <aliDFF> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ali16BFA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ali4BFA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <aliFullAdder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <aliHalfAdder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_q> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <controller> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <multiply>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\multiply.vhd".
+    Summary:
+	no macro.
+Unit <multiply> synthesized.
+
+Synthesizing Unit <reg_a>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\reg_a.vhd".
+    Found 16-bit register for signal <product_msb>.
+    Found 1-bit register for signal <lsb_a>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <reg_a> synthesized.
+
+Synthesizing Unit <aliDFF>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliDFF.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <aliDFF> synthesized.
+
+Synthesizing Unit <ali16BFA>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\ali16BFA.vhd".
+    Summary:
+	no macro.
+Unit <ali16BFA> synthesized.
+
+Synthesizing Unit <ali4BFA>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\ali4BFA.vhd".
+    Summary:
+	no macro.
+Unit <ali4BFA> synthesized.
+
+Synthesizing Unit <aliFullAdder>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliFullAdder.vhd".
+    Summary:
+	no macro.
+Unit <aliFullAdder> synthesized.
+
+Synthesizing Unit <aliHalfAdder>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\aliHalfAdder.vhd".
+    Summary:
+Unit <aliHalfAdder> synthesized.
+
+Synthesizing Unit <reg_q>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\reg_q.vhd".
+    Found 16-bit register for signal <product_lsb>.
+    Found 1-bit register for signal <lsb_q>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <reg_q> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\counter.vhd".
+    Found 4-bit register for signal <SEQ.temp>.
+    Found 4-bit adder for signal <SEQ.temp[3]_inp[3]_add_0_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <controller>.
+    Related source file is "C:\Users\Ali Yazdi\Desktop\Ali Yazdi\m\controller.vhd".
+    Found 2-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <reset_a>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <load_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <init>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <load_a>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+	inferred   1 Finite State Machine(s).
+Unit <controller> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 38
+ 1-bit register                                        : 35
+ 16-bit register                                       : 2
+ 4-bit register                                        : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <init> (without init value) has a constant value of 1 in block <mycontroller>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into accumulator <SEQ.temp>: 1 register on signal <SEQ.temp>.
+Unit <counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Accumulators                                         : 1
+ 4-bit up accumulator                                  : 1
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <init> (without init value) has a constant value of 1 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mycontroller/FSM_0> on signal <current_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ mul0  | 01
+ mul1  | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <product_lsb_0> in Unit <reg_q> is equivalent to the following FF/Latch, which will be removed : <lsb_q> 
+INFO:Xst:2261 - The FF/Latch <product_msb_0> in Unit <reg_a> is equivalent to the following FF/Latch, which will be removed : <lsb_a> 
+
+Optimizing unit <multiply> ...
+
+Optimizing unit <reg_q> ...
+
+Optimizing unit <controller> ...
+
+Optimizing unit <reg_a> ...
+WARNING:Xst:1710 - FF/Latch <mycounter/SEQ.temp_0> (without init value) has a constant value of 1 in block <multiply>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mycounter/SEQ.temp_1> (without init value) has a constant value of 1 in block <multiply>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mycounter/SEQ.temp_2> (without init value) has a constant value of 1 in block <multiply>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mycounter/SEQ.temp_3> (without init value) has a constant value of 1 in block <multiply>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiply, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : multiply.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 76
+#      INV                         : 1
+#      LUT2                        : 8
+#      LUT3                        : 20
+#      LUT4                        : 2
+#      LUT5                        : 17
+#      LUT6                        : 28
+# FlipFlops/Latches                : 70
+#      FDC                         : 67
+#      LD                          : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 66
+#      IBUF                        : 34
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              70  out of  126800     0%  
+ Number of Slice LUTs:                   76  out of  63400     0%  
+    Number used as Logic:                76  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    109
+   Number with an unused Flip Flop:      39  out of    109    35%  
+   Number with an unused LUT:            33  out of    109    30%  
+   Number of fully used LUT-FF pairs:    37  out of    109    33%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          67
+ Number of bonded IOBs:                  67  out of    210    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                                                       | Clock buffer(FF name)       | Load  |
+---------------------------------------------------------------------------------------------------+-----------------------------+-------+
+clk                                                                                                | BUFGP                       | 67    |
+mycontroller/current_state[1]_PWR_22_o_Mux_19_o(mycontroller/current_state[1]_PWR_22_o_Mux_19_o1:O)| NONE(*)(mycontroller/load_a)| 1     |
+mycontroller/current_state_FSM_FFd1                                                                | NONE(mycontroller/reset_a)  | 1     |
+mycontroller/current_state[1]_PWR_20_o_Mux_15_o(mycontroller/current_state[1]_PWR_20_o_Mux_15_o1:O)| NONE(*)(mycontroller/load_q)| 1     |
+---------------------------------------------------------------------------------------------------+-----------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.307ns (Maximum Frequency: 433.370MHz)
+   Minimum input arrival time before clock: 2.124ns
+   Maximum output required time after clock: 0.705ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.307ns (frequency: 433.370MHz)
+  Total number of paths / destination ports: 355 / 68
+-------------------------------------------------------------------------
+Delay:               2.307ns (Levels of Logic = 4)
+  Source:            myreg_a/product_msb_1 (FF)
+  Destination:       mydff/q (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: myreg_a/product_msb_1 to mydff/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.361   0.389  myreg_a/product_msb_1 (myreg_a/product_msb_1)
+     LUT4:I2->O            4   0.097   0.525  myfa/p1/p3/p2/Mxor_s_xo<0>21 (myfa/p1/p3/p2/Mxor_s_xo<0>2)
+     LUT5:I2->O           10   0.097   0.337  myfa/p2/p3/p2/Mxor_s_xo<0>11 (myfa/p2/p3/p2/Mxor_s_xo<0>1)
+     LUT5:I4->O            2   0.097   0.299  myfa/p3/p3/p2/Mxor_s_xo<0>11 (myfa/p3/p3/p2/Mxor_s_xo<0>1)
+     LUT5:I4->O            1   0.097   0.000  myfa/p4/p4/cout1 (cout)
+     FDC:D                     0.008          mydff/q
+    ----------------------------------------
+    Total                      2.307ns (0.757ns logic, 1.550ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 306 / 36
+-------------------------------------------------------------------------
+Offset:              2.124ns (Levels of Logic = 5)
+  Source:            multiplicand<0> (PAD)
+  Destination:       mydff/q (FF)
+  Destination Clock: clk rising
+
+  Data Path: multiplicand<0> to mydff/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.566  multiplicand_0_IBUF (multiplicand_0_IBUF)
+     LUT4:I0->O            4   0.097   0.525  myfa/p1/p3/p2/Mxor_s_xo<0>21 (myfa/p1/p3/p2/Mxor_s_xo<0>2)
+     LUT5:I2->O           10   0.097   0.337  myfa/p2/p3/p2/Mxor_s_xo<0>11 (myfa/p2/p3/p2/Mxor_s_xo<0>1)
+     LUT5:I4->O            2   0.097   0.299  myfa/p3/p3/p2/Mxor_s_xo<0>11 (myfa/p3/p3/p2/Mxor_s_xo<0>1)
+     LUT5:I4->O            1   0.097   0.000  myfa/p4/p4/cout1 (cout)
+     FDC:D                     0.008          mydff/q
+    ----------------------------------------
+    Total                      2.124ns (0.397ns logic, 1.727ns route)
+                                       (18.7% logic, 81.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.705ns (Levels of Logic = 1)
+  Source:            myreg_a/product_msb_6 (FF)
+  Destination:       product_msb<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: myreg_a/product_msb_6 to product_msb<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             15   0.361   0.344  myreg_a/product_msb_6 (myreg_a/product_msb_6)
+     OBUF:I->O                 0.000          product_msb_6_OBUF (product_msb<6>)
+    ----------------------------------------
+    Total                      0.705ns (0.361ns logic, 0.344ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+clk                                            |    2.307|         |         |         |
+mycontroller/current_state[1]_PWR_20_o_Mux_15_o|         |    1.157|         |         |
+mycontroller/current_state[1]_PWR_22_o_Mux_19_o|         |    1.992|         |         |
+mycontroller/current_state_FSM_FFd1            |    1.212|         |         |         |
+-----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mycontroller/current_state[1]_PWR_20_o_Mux_15_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.865|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mycontroller/current_state[1]_PWR_22_o_Mux_19_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.668|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mycontroller/current_state_FSM_FFd1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.865|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.82 secs
+ 
+--> 
+
+Total memory usage is 477152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
